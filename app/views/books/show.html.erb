@@ -1,0 +1,18 @@
+<header></header>
+
+<main class="top">
+  <p class="mar">
+    <strong>Title:</strong>
+    <%= @book.title %>
+  </p>
+  <p class="mar">
+    <strong>Body:</strong>
+    <%= @book.body %>
+  </p>
+  <!--後ほどリンク先変更する必要あり-->
+  <%= link_to "Edit", edit_book_path(@book) %>
+  |
+  <%= link_to "Back", books_path %>
+</main>
+
+<footer></footer>
